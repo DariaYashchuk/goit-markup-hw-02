@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #2E2F42;
+}
+footer .logo {
+    color: #F4F4FD;
+}
+.logo > span {
+    color: #4D5AE5;
+}
+.logo :visited {
+    color: #2E2F42;
+}
+li {
+    list-style-type:none
+}
+a {
+    text-decoration: none;
+}
+.header-nav {
+font-weight: 500;
+color: #2E2F42;
+}
+header a {
+    color: #2E2F42;
+}
+header a :visited {
+    color: #2E2F42;
+}
+
+.business,
+footer {
+    background-color: #2E2F42;
+}
+.business > h1 {
+    font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+color: #FFFFFF;
+}
+.button-order {
+    font-weight: 500;
+color: #FFFFFF;
+background-color: #4D5AE5;
+cursor: pointer;
+}
+
+.advantages h2 {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+}
+.advantages h3 {
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+.portfolio button {
+    background-color: #F4F4FD;
+    font-weight: 500;
+    color: #4D5AE5;
+    cursor: pointer;
+}
+.portfolio button:hover,
+.portfolio button:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
+}
+.cards h2 {
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+.cards h3 {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+}
+.team {
+    background-color: #F4F4FD;
+}
+footer p {
+    color: #E7E9FC;
+}

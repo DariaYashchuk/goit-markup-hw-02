@@ -1,95 +1,159 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    --primary-bgc: #FFFFFF;
+    --primary-text-color: #FFFFFF;
+    --main-dark: #434455;
+    --color-header: #2E2F42;
+    --footer-bgc: #2E2F42;
+    --footer-logo-color: #F4F4FD;
+    --footer-text-color: #E7E9FC;
+    --portfolio-team-bgc: #F4F4FD;
+    --main-blue: #4D5AE5;
+    --button-after: #404BBF;
+    --order-button-hover: #404BBF;
+    --nav-active: #404BBF;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
-    font-weight: 400;
+    font-family: var(--main-font);
+    color: var(--main-dark);
+    background-color: var(--primary-bgc);
 font-size: 16px;
-line-height: 1.5;
+letter-spacing: 0.02em;
 }
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    color: #2E2F42;
+letter-spacing: 0.02em;
+    color: var(--color-header);
 }
 footer .logo {
-    color: #F4F4FD;
+    color: var(--footer-logo-color);
 }
 .logo > span {
-    color: #4D5AE5;
+    color: var(--main-blue);
 }
-.logo :visited {
-    color: #2E2F42;
+.logo:visited {
+    color: var(--color-header);
 }
+footer .logo:visited {
+    color: var(--footer-logo-color);
+}
+.header-nav {
+    font-weight: 500;
+}
+.header-nav a,
+.contacts a {
+    color: var(--color-header);
+}
+
+.header-nav a:active,
+.header-nav a:focus,
+.contacts a:active,
+.contacts a:focus {
+    color: var(--nav-active);
+}
+
+
+
 li {
     list-style-type:none
 }
 a {
     text-decoration: none;
 }
-.header-nav {
-font-weight: 500;
-color: #2E2F42;
-}
-header a {
-    color: #2E2F42;
-}
-header a :visited {
-    color: #2E2F42;
-}
-
 .business,
 footer {
-    background-color: #2E2F42;
+    background-color: var(--footer-bgc);
 }
 .business > h1 {
     font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
-color: #FFFFFF;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
 }
 .button-order {
     font-weight: 500;
-color: #FFFFFF;
-background-color: #4D5AE5;
+color: var(--primary-text-color);
+background-color: var(--main-blue);
 cursor: pointer;
+font-family: var(--main-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
 }
-
-.advantages h2 {
+.button-order:hover {
+    background-color: var(--order-button-hover);
+}
+.advantages-text {
+    line-height: 1.5;
+}
+.advantages h2,
+.what-doing h2,
+.team h2 {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
+letter-spacing: 0.02em;
 }
-.advantages h3 {
+.advantages h3,
+.what-doing h3,
+.team h3 {
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
+letter-spacing: 0.02em;
 }
 .portfolio button {
-    background-color: #F4F4FD;
+    background-color: var(--portfolio-team-bgc);
     font-weight: 500;
-    color: #4D5AE5;
+    color: var(--main-blue);
     cursor: pointer;
+
+    font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
 }
 .portfolio button:hover,
 .portfolio button:focus {
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--primary-text-color);
+    background-color: var(--main-blue);
 }
 .cards h2 {
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
+letter-spacing: 0.02em;
 }
+
 .cards h3 {
-    font-weight: 400;
-font-size: 16px;
 line-height: 1.5;
 }
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--portfolio-team-bgc);
 }
-footer p {
-    color: #E7E9FC;
+.footer-text {
+    color: var(--footer-text-color);
+    line-height: 1.5;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

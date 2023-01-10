@@ -6,6 +6,7 @@
     --primary-text-color: #FFFFFF;
     --main-dark: #434455;
     --color-header: #2E2F42;
+    --color-h: #2E2F42;
     --footer-bgc: #2E2F42;
     --footer-logo-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
@@ -50,14 +51,22 @@ footer .logo:visited {
     color: var(--color-header);
 }
 
+.header-nav a.current {
+    color: var(--main-blue);
+}
+
 .header-nav a:active,
 .header-nav a:focus,
 .contacts a:active,
-.contacts a:focus {
+.contacts a:focus,
+.header-nav a:hover,
+.contacts a:hover {
     color: var(--nav-active);
 }
 
-
+p {
+    line-height: 1.5;
+}
 
 li {
     list-style-type:none
@@ -100,6 +109,7 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
+color: var(--color-h);
 }
 .advantages h3,
 .what-doing h3,
@@ -108,6 +118,7 @@ letter-spacing: 0.02em;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+color: var(--color-h);
 }
 .portfolio button {
     background-color: var(--portfolio-team-bgc);
